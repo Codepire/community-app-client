@@ -1,0 +1,31 @@
+.HomePage {
+  color: white;
+  font-family: 'Noto Sans', cursive;
+}
+
+.HomePage__header {
+  margin: 0 10%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.HomePage__header-h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.HomePage__header-p {
+  line-height: 1.625;
+  margin-top: 20px;
+  text-align: center;
+  letter-spacing: 0.8px;
+}
+
+.txt-linear-gradient-pink {
+  background: -webkit-linear-gradient(#f1e9ef, #e00ce7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

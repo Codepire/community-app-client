@@ -1,0 +1,21 @@
+.Navbar {
+  width: 100%;
+  position: fixed;
+  margin-top: 2rem;
+  color: white;
+}
+
+.Navbar__ul {
+  background-color: rgba(53, 53, 53, 0.4);
+  backdrop-filter: blur(3px) saturate(2);
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Navbar__li {
+  list-style-type: none;
+  font-family: 'Noto Sans', sans-serif;
+}
