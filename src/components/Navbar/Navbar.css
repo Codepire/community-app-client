@@ -18,3 +18,66 @@
   list-style-type: none;
   font-family: 'Noto Sans', sans-serif;
 }
+
+/* Mobile Navbar Menu */
+
+.Mobile-Navbar {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.Mobile-Navbar 
+.Mobile-Header {
+  padding: 1rem;
+  background-color: none;
+  transition: background-color 1s ease;
+}
+
+.Mobile-Navbar
+.Mobile-Header-Open {
+  background-color: rgba(54, 54, 54, 0.8);
+}
+
+.Mobile-Navbar
+.Mobile-Header
+.Mobile-Hamburger-Icon {
+  font-size: 1.8rem;
+}
+
+.Mobile-Navbar
+.Mobile-Menu {
+  background-color: rgba(54, 54, 54, 0.8);
+  height: 100%;
+  width: 12rem;
+  padding: 1.8rem;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.Mobile-Navbar
+.Mobile-Menu-Open {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.Mobile-Navbar
+.Mobile-Menu
+.Mobile-Navbar-List {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  list-style: none;
+}
+
+.Mobile-Navbar 
+.Mobile-Menu 
+.Mobile-Navbar-List
+.Mobile-Navbar-Item {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+/* Animations */
+
