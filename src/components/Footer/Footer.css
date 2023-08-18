@@ -1,0 +1,9 @@
+footer {
+  font-family: 'Noto Sans', cursive;
+  height: 70vh;
+  background-image: linear-gradient(to bottom, rgb(16, 16, 16), black);
+}
+
+.Footer__div {
+  margin: 100px 10%;
+}
