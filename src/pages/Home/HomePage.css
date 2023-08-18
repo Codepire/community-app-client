@@ -3,6 +3,7 @@
   font-family: 'Noto Sans', cursive;
 }
 
+/* Header section  */
 .HomePage__header {
   margin: 0 10%;
   display: flex;
@@ -27,26 +28,17 @@
 .txt-linear-gradient-pink {
   background: -webkit-linear-gradient(#f1e9ef, #e00ce7);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.HomePage__header-img {
-  height: 30%;
-  z-index: -1;
+/* Features section  */
+.HomePage__features {
+  /* background-color: #181818; */
+  height: 100vh;
 }
 
-.img1 {
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-}
-
-.img2 {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-}
-
+/* Media queries */
 @media (max-width: 694px) {
 
   .img2,

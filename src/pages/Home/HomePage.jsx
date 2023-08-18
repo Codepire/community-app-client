@@ -8,7 +8,7 @@ export default function HomePage() {
     <>
       <Layout>
         <div className="HomePage">
-          <div className="HomePage__header">
+          <section className="HomePage__header">
             <h1 className="HomePage__header-h1">
               IMAGINE A{" "}
               <span className="txt-linear-gradient-pink">PLACE...</span>
@@ -26,18 +26,8 @@ export default function HomePage() {
               buttonText="GET STARTED"
               buttonClassName="btn btn-large btn-black-shadow btn-purple-hover "
             />
-            <img
-              className="HomePage__header-img img1"
-              src="../../svgs/discord1.svg"
-              alt="discord 1"
-            />
-            <img
-              className="HomePage__header-img img2"
-              src="../../svgs/discord2.svg"
-              alt="discord 2"
-            />
-          </div>
-          <div style={{ height: "100vh", backgroundColor: "red" }}></div>
+          </section>
+          <section className="HomePage__features"></section>
         </div>
       </Layout>
     </>
