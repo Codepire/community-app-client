@@ -26,6 +26,16 @@ export default function HomePage() {
               buttonText="GET STARTED"
               buttonClassName="btn btn-large btn-black-shadow btn-purple-hover "
             />
+            <img
+              className="HomePage__header-img img1"
+              src="../../svgs/discord1.svg"
+              alt="discord 1"
+            />
+            <img
+              className="HomePage__header-img img2"
+              src="../../svgs/discord2.svg"
+              alt="discord 2"
+            />
           </div>
           <div style={{ height: "100vh", backgroundColor: "red" }}></div>
         </div>
