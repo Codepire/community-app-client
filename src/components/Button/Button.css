@@ -17,8 +17,8 @@
 }
 
 .btn-purple-hover:hover {
-  background: blueviolet;
+  background: #b50bbb;
   color: white;
-  box-shadow: 1px 1px 10px purple;
+  box-shadow: 1px 1px 20px purple;
   transition: 0.4s;
 }
