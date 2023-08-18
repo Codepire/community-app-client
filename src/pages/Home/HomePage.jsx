@@ -30,31 +30,31 @@ export default function HomePage() {
           </section>
           <hr />
           <section className="HomePage__features">
-            <h1 className="HomePage__features-h1">FEATURES</h1>
+            <h1 className="HomePage__features-h1">🚀 FEATURES</h1>
             <div className="HomePage__features-box">
               <FeatureBox
-                featureTitle="Feature"
-                featureDescription="some description about feature is here. this is some more description"
+                featureTitle="⌛ Realtime Chatting"
+                featureDescription="some description about feature is here. this is some more description... will write later.. extra testing description.."
               />
               <FeatureBox
-                featureTitle="Feature"
-                featureDescription="some description about feature is here. this is some more description"
+                featureTitle="💪 High Performance"
+                featureDescription="some description about feature is here. this is some more description... will write later.. extra testing description.."
               />
               <FeatureBox
-                featureTitle="Feature"
-                featureDescription="some description about feature is here. this is some more description"
+                featureTitle="👥 Group Discussion"
+                featureDescription="some description about feature is here. this is some more description... will write later.. extra testing description.."
               />
               <FeatureBox
-                featureTitle="Feature"
-                featureDescription="some description about feature is here. this is some more description"
+                featureTitle="🦄 Easy Invite"
+                featureDescription="some description about feature is here. this is some more description... will write later.. extra testing description.."
               />
               <FeatureBox
-                featureTitle="Feature"
-                featureDescription="some description about feature is here. this is some more description"
+                featureTitle="🔐 Encrypted Chat"
+                featureDescription="some description about feature is here. this is some more description... will write later.. extra testing description.."
               />
               <FeatureBox
-                featureTitle="Feature"
-                featureDescription="some description about feature is here. this is some more description"
+                featureTitle="🤖 And More.."
+                featureDescription="some description about feature is here. this is some more description... will write later.. extra testing description.."
               />
             </div>
           </section>

@@ -36,14 +36,22 @@
   margin: 100px 10% 50px;
   min-height: 100vh;
   height: fit-content;
+  text-align: center;
 }
 
 .HomePage__features-h1 {
   text-align: center;
+  display: inline;
+  margin: auto;
   font-size: 2rem;
 }
 
+.HomePage__features-h1:hover {
+  text-shadow: #3b1de4 1px 1px 20px;
+}
+
 .HomePage__features-box {
+  text-align: left;
   margin: 50px 0;
   display: flex;
   justify-content: space-evenly;
