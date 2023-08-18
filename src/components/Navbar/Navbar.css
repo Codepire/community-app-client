@@ -6,8 +6,8 @@
 }
 
 .Navbar__ul {
-  background-color: rgba(53, 53, 53, 0.4);
-  backdrop-filter: blur(3px) saturate(2);
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  backdrop-filter: blur(2px) saturate(2);
   width: 70%;
   margin: auto;
   padding: 10px;
