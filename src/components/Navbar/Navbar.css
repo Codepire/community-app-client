@@ -6,13 +6,13 @@
 }
 
 .Navbar__ul {
-  /* background-color: rgba(0, 0, 0, 0.4); */
-  backdrop-filter: blur(2px) saturate(2);
   width: 70%;
   margin: auto;
-  padding: 10px;
+  padding: 10px 0;
   display: flex;
   justify-content: space-evenly;
+  backdrop-filter: blur(2px) saturate(2);
+  border-radius: 100px;
 }
 
 .Navbar__li {
