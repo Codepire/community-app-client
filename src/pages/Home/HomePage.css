@@ -33,8 +33,9 @@
 
 /* Features section  */
 .HomePage__features {
-  margin: 100px 10%;
-  height: 100vh;
+  margin: 100px 10% 50px;
+  min-height: 100vh;
+  height: fit-content;
 }
 
 .HomePage__features-h1 {
