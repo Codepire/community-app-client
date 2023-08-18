@@ -2,6 +2,7 @@ import "./HomePage.css";
 
 import Layout from "../../components/layout/Layout";
 import Button from "../../components/Button/Button";
+import FeatureBox from "../../components/FeatureBox/FeatureBox";
 
 export default function HomePage() {
   return (
@@ -27,7 +28,36 @@ export default function HomePage() {
               buttonClassName="btn btn-large btn-black-shadow btn-purple-hover "
             />
           </section>
-          <section className="HomePage__features"></section>
+          <hr />
+          <section className="HomePage__features">
+            <h1 className="HomePage__features-h1">FEATURES</h1>
+            <div className="HomePage__features-box">
+              <FeatureBox
+                featureTitle="Feature"
+                featureDescription="some description about feature is here. this is some more description"
+              />
+              <FeatureBox
+                featureTitle="Feature"
+                featureDescription="some description about feature is here. this is some more description"
+              />
+              <FeatureBox
+                featureTitle="Feature"
+                featureDescription="some description about feature is here. this is some more description"
+              />
+              <FeatureBox
+                featureTitle="Feature"
+                featureDescription="some description about feature is here. this is some more description"
+              />
+              <FeatureBox
+                featureTitle="Feature"
+                featureDescription="some description about feature is here. this is some more description"
+              />
+              <FeatureBox
+                featureTitle="Feature"
+                featureDescription="some description about feature is here. this is some more description"
+              />
+            </div>
+          </section>
         </div>
       </Layout>
     </>

@@ -1,0 +1,17 @@
+.FeatureBox {
+  height: 120px;
+  width: 300px;
+  margin: 5px;
+  padding: 24px;
+  border: rgb(68, 67, 67) solid 1px;
+  border-radius: 12px;
+}
+
+.FeatureBox:hover {
+  background-image: linear-gradient(to bottom, black, rgb(10, 10, 10));
+}
+
+.FeatureBox>p {
+  color: rgb(133, 131, 131);
+  font-family: cursive;
+}
