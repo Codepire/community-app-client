@@ -123,8 +123,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        <hr className="footer-line"></hr>
         <div class="footer-bottom">
-          <p>&copy; 2023 Your Company Name</p>
+          <p>&copy; 2023 Company Name</p>
           <div class="social-icons">
             <a href="www.xyz.com">
               <img src="twitter.png" alt="Twitter"></img>
