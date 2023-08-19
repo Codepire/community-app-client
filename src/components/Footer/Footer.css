@@ -1,9 +1,116 @@
+/* Footer styles */
 footer {
-  font-family: 'Noto Sans', cursive;
+  font-family: "Noto Sans", cursive;
   height: 70vh;
   background-image: linear-gradient(to bottom, rgb(16, 16, 16), black);
 }
 
 .Footer__div {
   margin: 100px 10%;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul.footer-list {
+  padding: 0; /* Reset padding for the ul with class footer-list */
+}
+
+ul.footer-list li {
+  margin-bottom: 0.5rem; /* Add vertical spacing between li elements */
+}
+
+.footer-legal .newsletter {
+  margin-top: 20px;
+}
+.footer-headings {
+  padding-bottom: 0.8rem;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.2s ease-in-out;
+}
+
+.social-icons img {
+  max-width: 20px;
+  height: auto;
+}
+
+/* Add hover animation to links */
+.social-icons a:hover {
+  color: #ff8800; /* Change the color to your desired hover color */
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*newsletter*/
+.newsletter {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.newsletter-text {
+  font-size: 0.8rem;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.newsletter-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ff8800; /* Border color */
+  background-color: transparent;
+  color: #fff; /* Text color */
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.newsletter-input::placeholder {
+  color: #ccc; /* Placeholder text color */
+}
+
+.newsletter-input:hover,
+.newsletter-input:focus {
+  border-color: #ff5500;
+  box-shadow: 0 0 5px rgba(255, 136, 0, 0.5);
 }
