@@ -117,7 +117,7 @@ export default function Footer() {
               <p className="newsletter-text">Subscribe to our newsletter:</p>
               <input
                 type="email"
-                class="newsletter-input"
+                className="newsletter-input"
                 placeholder="Your email"
               ></input>
             </div>
