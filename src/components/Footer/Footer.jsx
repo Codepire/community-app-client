@@ -5,11 +5,11 @@ export default function Footer() {
     <footer>
       <hr />
       <div className="Footer__div">
-        <div class="footer-grid">
-          <div class="footer-logo">
+        <div className="footer-grid">
+          <div className="footer-logo">
             <img src="logo.png" alt="Logo"></img>
           </div>
-          <div class="footer-resources">
+          <div className="footer-resources">
             <h4 className="footer-headings">Resources</h4>
             <ul className="footer-list">
               <li>
@@ -44,7 +44,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div class="footer-more">
+          <div className="footer-more">
             <h4 className="footer-headings">More</h4>
             <ul className="footer-list">
               <li>
@@ -74,7 +74,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div class="footer-about">
+          <div className="footer-about">
             <h4 className="footer-headings">About</h4>
             <ul className="footer-list">
               <li>
@@ -99,7 +99,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div class="footer-legal">
+          <div className="footer-legal">
             <h4 className="footer-headings">Legal</h4>
             <ul className="footer-list">
               <li>
@@ -113,8 +113,8 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-            <div class="newsletter">
-              <p class="newsletter-text">Subscribe to our newsletter:</p>
+            <div className="newsletter">
+              <p className="newsletter-text">Subscribe to our newsletter:</p>
               <input
                 type="email"
                 class="newsletter-input"
@@ -124,9 +124,9 @@ export default function Footer() {
           </div>
         </div>
         <hr className="footer-line"></hr>
-        <div class="footer-bottom">
+        <div className="footer-bottom">
           <p>&copy; 2023 Company Name</p>
-          <div class="social-icons">
+          <div className="social-icons">
             <a href="www.xyz.com">
               <img src="twitter.png" alt="Twitter"></img>
             </a>
