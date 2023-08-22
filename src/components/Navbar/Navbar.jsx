@@ -4,7 +4,7 @@ import "./Navbar.css";
 export default function Navbar() {
 
   const [navBackColor, setNavBackColor] = useState("rgba(0, 0, 0, 0.4)");
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
