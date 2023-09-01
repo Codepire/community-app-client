@@ -6,7 +6,7 @@
 
 .btn-large {
   height: 45px;
-  width: fit-content;
+  min-width: fit-content;
   font-size: large;
   font-weight: 600;
   padding: 0 7px;
@@ -21,4 +21,20 @@
   color: white;
   box-shadow: 1px 1px 20px purple;
   transition: 0.4s;
+}
+
+.btn-green-hover:hover {
+  background: #36e630;
+  color: white;
+  box-shadow: 1px 1px 20px green;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.btn-primary-hover:hover {
+  background: rgb(91, 91, 252);
+  color: white;
+  box-shadow: 1px 1px 20px blue;
+  transition: 0.4s;
+  cursor: pointer;
 }
