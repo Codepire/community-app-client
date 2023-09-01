@@ -1,0 +1,10 @@
+input {
+  height: 33px;
+  width: 280px;
+  border: none;
+  margin: 7px 0;
+  padding: 7px 10px;
+  font-size: large;
+  font-family: 'Noto Sans', sans-serif;
+  letter-spacing: 0.3px;
+}
