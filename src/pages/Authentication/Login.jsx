@@ -6,7 +6,7 @@ import { useState } from "react";
 
 import axios from "axios";
 import { Toaster, toast } from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function Login() {
   const [credentials, setCredentials] = useState({
@@ -63,7 +63,7 @@ export default function Login() {
           <Toaster position="bottom-right" reverseOrder={false} />
         </div>
         <form onSubmit={handleSubmit}>
-          <h2>Sign in</h2>
+          <h2>Log in</h2>
           <Input
             type="text"
             name="username"
@@ -84,6 +84,9 @@ export default function Login() {
             buttonType="submit"
             styles={{ width: "300px", margin: "7px 0" }}
           />
+          <p>
+            New user? <Link to="/auth/register">register here</Link>
+          </p>
         </form>
       </div>
     </>

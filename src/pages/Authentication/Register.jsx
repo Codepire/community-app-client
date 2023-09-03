@@ -5,7 +5,7 @@ import Button from "../../components/Button/Button";
 import { useState } from "react";
 import axios from "axios";
 import { Toaster, toast } from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Register() {
   const [credentials, setCredentials] = useState({
@@ -92,6 +92,9 @@ export default function Register() {
           buttonClassName="btn btn-large btn-primary-hover"
           styles={{ width: "300px", margin: "7px 0" }}
         />
+        <p>
+          Already registered? <Link to="/auth/login">login here</Link>
+        </p>
       </form>
     </div>
   );
