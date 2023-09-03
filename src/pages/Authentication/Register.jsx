@@ -3,6 +3,8 @@ import "./auth.css";
 import Input from "../../components/Input/Input";
 import Button from "../../components/Button/Button";
 import { useState } from "react";
+import useAuthCheck from "../../hooks/useAuthCheck";
+
 import axios from "axios";
 import { Toaster, toast } from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
@@ -14,6 +16,8 @@ export default function Register() {
     password: "",
   });
   const navigate = useNavigate();
+
+  useAuthCheck();
 
   function handleChange(event) {
     const { name, value } = event.target;
