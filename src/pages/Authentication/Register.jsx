@@ -4,6 +4,8 @@ import Input from "../../components/Input/Input";
 import Button from "../../components/Button/Button";
 import { useState } from "react";
 import axios from "axios";
+import { Toaster, toast } from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 export default function Register() {
   const [credentials, setCredentials] = useState({
@@ -11,6 +13,7 @@ export default function Register() {
     email: "",
     password: "",
   });
+  const navigate = useNavigate();
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -23,7 +26,7 @@ export default function Register() {
     event.preventDefault();
 
     try {
-      const response = await axios({
+      await axios({
         url: "/auth/register",
         method: "POST",
         headers: {
@@ -35,9 +38,17 @@ export default function Register() {
           password: credentials.password,
         },
       });
-      console.log(response);
+      toast.success("Registered!");
+      setTimeout(() => {
+        navigate("/auth/login");
+      }, 2000);
     } catch (err) {
-      console.log("err");
+      console.log(err);
+      if (err.response.status === 409) {
+        toast.error("User already exist with this username!");
+      } else if (err.response.status === 422) {
+        toast.error("Password length must be larger than 8");
+      }
     } finally {
       setCredentials({
         username: "",
@@ -49,6 +60,9 @@ export default function Register() {
 
   return (
     <div className="Auth">
+      <div>
+        <Toaster position="bottom-right" reverseOrder={false} />
+      </div>
       <form onSubmit={handleSubmit}>
         <h2>Create Account</h2>
         <Input

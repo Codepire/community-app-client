@@ -5,12 +5,15 @@ import Button from "../../components/Button/Button";
 import { useState } from "react";
 
 import axios from "axios";
+import { Toaster, toast } from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const [credentials, setCredentials] = useState({
     username: "",
     password: "",
   });
+  const navigate = useNavigate();
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -36,8 +39,15 @@ export default function Login() {
         }),
       });
       localStorage.setItem("jwtToken", response.data.token);
+      toast.success("Logged in!");
+      setTimeout(() => {
+        navigate("/");
+      }, 2000);
     } catch (err) {
-      console.log("err");
+      console.log(err);
+      if (err.response.status === 401) {
+        toast.error("Unauthorized!");
+      }
     } finally {
       setCredentials({
         username: "",
@@ -49,6 +59,9 @@ export default function Login() {
   return (
     <>
       <div className="Auth">
+        <div>
+          <Toaster position="bottom-right" reverseOrder={false} />
+        </div>
         <form onSubmit={handleSubmit}>
           <h2>Sign in</h2>
           <Input
